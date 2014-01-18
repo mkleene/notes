@@ -1,0 +1,7 @@
+Blelloch
+    Upsweep condition is that at the end of step i it's the case that each block of size 2^i has the sum of all of the elements in the block in the last position of the block
+    Downsweep condition is that if we copy the sum of all the elements in the previous block to the last position in a block we'll correctly compute the sum
+
+Hillis-Steele
+    Condition is that after step i each element contains the sum of the elements 2^i - 1 away from it, so blocks of size 2^i are correct.
+    
